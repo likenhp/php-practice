@@ -11,8 +11,8 @@ class NewClass {
   public $info = "Information";
 }
 
-$object = new NewClass;
-var_dump($object);
+// $object = new NewClass;
+// var_dump($object);
 
 class Person {
   protected $firstname = "Ken";
@@ -33,3 +33,15 @@ class Pet extends Person { // can access the private in Person dues to extends
   }
 }
 
+class Somebody {
+  // Properties
+  public $name;
+  public $eyeColor;
+  public $age;
+  // Methods
+  public function setPerson($name, $eyeColor, $age) {
+    $this->name = $name;
+    $this->eyeColor = $eyeColor;
+    $this->age = $age;
+  }
+}
