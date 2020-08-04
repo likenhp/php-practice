@@ -5,6 +5,7 @@ private only allows usage within the class, does not allow extensions
 public allow usage outside of classes
 protected can only be access within the same class, but also allows extensions of the class
 */
+namespace Person
 
 class NewClass {
   // properties and methods here
