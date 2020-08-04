@@ -51,7 +51,7 @@ class Somebody {
   }
 
   // Methods
-  public function setPerson($name, $eyeColor, $age) {
+  public function setPerson(string $name, string $eyeColor, int $age) {
     $this->name = $name;
     $this->eyeColor = $eyeColor;
     $this->age = $age;
@@ -71,7 +71,7 @@ class Somebody {
     self::$drinkingAge = $newDA;
   }
 
-  public static function getDA($) {
+  public static function getDA() {
     return self::$drinkingAge;
   }
 
