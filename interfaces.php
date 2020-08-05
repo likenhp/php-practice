@@ -21,7 +21,7 @@ class Cash {
 }
 
 class BuyProduct {
-  public function pay() {
-    
+  public function pay($payType) {
+
   }
 }
