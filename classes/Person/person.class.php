@@ -5,6 +5,7 @@ private only allows usage within the class, does not allow extensions
 public allow usage outside of classes
 protected can only be access within the same class, but also allows extensions of the class
 */
+namespace Person
 
 class NewClass {
   // properties and methods here
@@ -50,7 +51,7 @@ class Somebody {
   }
 
   // Methods
-  public function setPerson($name, $eyeColor, $age) {
+  public function setPerson(string $name, string $eyeColor, int $age) {
     $this->name = $name;
     $this->eyeColor = $eyeColor;
     $this->age = $age;
@@ -70,7 +71,7 @@ class Somebody {
     self::$drinkingAge = $newDA;
   }
 
-  public static function getDA($) {
+  public static function getDA() {
     return self::$drinkingAge;
   }
 
